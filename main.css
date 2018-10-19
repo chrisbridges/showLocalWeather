@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  font-family: Roboto;
+  background-color: #00B2EE;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 2%;
+  border-color: black 2px solid;
+  width: 60%;
+  padding: 25px;
+}
+
+.tempToggle {
+  position: fixed;
+  bottom: -4px;
+  right: 20px;
+  border: 2px black solid;
+  border-radius: 5%;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.sunrise, .sunset {
+  margin: 25px;
+}

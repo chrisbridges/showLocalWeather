@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Local Weather</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Local Weather:</h1>
+    <h3><span id="city"></span><span id="country"></span></h3>
+    <h4><span id="temperature"></span><span id="temperatureUnit"></span></h4>
+    <i class="weatherIcon"></i>
+    <div class="sunrise-sunset">
+      <div class="sunrise">
+        <span>Sunrise: </span><span id="sunrise"></span>
+      </div>
+      <div class="sunset">
+        <span>Sunset: </span><span id="sunset"></span>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="tempToggle"><i class="fa fa-thermometer-half fa-fw" aria-hidden="true"></i>&deg;C / &deg;F Toggle</a>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
