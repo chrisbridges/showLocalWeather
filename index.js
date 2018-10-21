@@ -12,17 +12,17 @@ $(document).ready(function() {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     var endpoint = 'https://fcc-weather-api.glitch.me/api/current?lat='
-    // Endpoint example - https://fcc-weather-api.glitch.me/api/current?lat=42.35&lon=-71.07
-      // paste this in your browser, see the results you get back
+    /* Endpoint example - https://fcc-weather-api.glitch.me/api/current?lat=42.35&lon=-71.07 */
+      /* paste this in your browser, see the results you get back */
 
     $.ajax({
       url: /* we need to include our endpoint here, as well as our lat / long coordinates */,
       success: function(weather) {
-        // 'weather' contains all of the data returned from the API call
-          // use this to access all the data needed to show the data on our webpage
-        console.log(weather); // check your browser console to view all the data the 'weather' object contains
-        console.log(latitude, longitude) // see our coordinates in the browser console here
-        $('#city').text(/* city name from weather object*/ */ + ', ');
+        /* 'weather' contains all of the data returned from the API call */
+          /* use this to access all the data needed to show the data on our webpage */
+        console.log(weather); /* check your browser console to view all the data the 'weather' object contains */
+        console.log(latitude, longitude) /* see our coordinates in the browser console here */
+        $('#city').text(/* city name from weather object*/ + ', ');
         $('#country').text(/* country name from weather object */);
         currentTempInCelsius = Math.round(/* temperature from weather object */ * 10) / 10;
         $('#temperature').html(/* temperature from weather object */ + ' &deg;');
